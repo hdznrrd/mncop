@@ -1,0 +1,17 @@
+#[EFNet]
+#enable=1
+#connect=NICK mncop
+#connect=KNOCK #pleaseknockatthischan
+#connect=JOIN #joinA
+#connect=JOIN #joinB
+#join_#joinA=PRIVMSG SomeBot :op mybotpassword
+#[paranode.net]
+#enable=1
+#connect=NS identify mynickservpassword
+#connect=OPER ircopname ircoppasswd
+#operup=MODE %self% +v-H
+#operup=MODE %self% +s +cefFGkoqsSvj
+#operup=SETHOST hide.me
+#operup=INVITE %self% #secretchannelA
+#operup=INVITE %self% #secretchannelB
+#operup=JOIN #chanA,#chanB,#chanC
